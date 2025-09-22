@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PalmTrack Login</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#15931b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112112",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .form-radio:checked {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+            background-color: #15931b;
+            border-color: #15931b;
+        }
+        .form-checkbox:checked {
+            background-color: #15931b;
+            border-color: #15931b;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col items-center justify-center min-h-screen p-6">
+<div class="w-full max-w-sm mx-auto">
+<div class="flex flex-col items-center mb-8">
+<span class="material-symbols-outlined text-primary text-6xl">
+                    eco
+                </span>
+<h1 class="text-3xl font-bold text-gray-900 dark:text-white mt-2">PalmTrack</h1>
+</div>
+<div class="space-y-6">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                        person
+                    </span>
+<input class="form-input w-full pl-12 pr-4 py-4 bg-white/50 dark:bg-black/20 border-2 border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-primary rounded-lg text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500" placeholder="Username" type="text"/>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                        lock
+                    </span>
+<input class="form-input w-full pl-12 pr-4 py-4 bg-white/50 dark:bg-black/20 border-2 border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-primary rounded-lg text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500" placeholder="Password" type="password"/>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<label class="flex items-center">
+<input type="checkbox" class="form-checkbox h-5 w-5 text-primary rounded border-gray-300 dark:border-gray-600 focus:ring-primary mr-2"/>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-300">Remember Me</span>
+</label>
+<a href="#" class="text-sm font-medium text-primary hover:underline">Forgot Password?</a>
+</div>
+<div class="mt-6">
+<button class="w-full bg-primary text-white font-bold py-4 px-4 rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark focus:ring-primary transition-all duration-300">
+                    Login
+                </button>
+</div>
+
+<div class="flex items-center justify-center mt-4">
+    <button class="flex items-center text-primary hover:text-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark focus:ring-primary transition-all duration-300">
+        <span class="material-symbols-outlined mr-2">fingerprint</span>
+        <span class="font-medium">Login with Biometrics</span>
+    </button>
+</div>
+
+<div class="mt-6">
+<p class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Select your role:</p>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+<label class="flex items-center space-x-3 p-3 border-2 border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer has-[:checked]:border-primary has-[:checked]:bg-primary/10">
+<input class="form-radio h-5 w-5 text-primary focus:ring-primary" name="role" type="radio"/>
+<span class="font-medium text-gray-900 dark:text-white">Asisten Panen</span>
+</label>
+<label class="flex items-center space-x-3 p-3 border-2 border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer has-[:checked]:border-primary has-[:checked]:bg-primary/10">
+<input class="form-radio h-5 w-5 text-primary focus:ring-primary" name="role" type="radio"/>
+<span class="font-medium text-gray-900 dark:text-white">Mandor Panen</span>
+</label>
+<label class="flex items-center space-x-3 p-3 border-2 border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer has-[:checked]:border-primary has-[:checked]:bg-primary/10">
+<input class="form-radio h-5 w-5 text-primary focus:ring-primary" name="role" type="radio"/>
+<span class="font-medium text-gray-900 dark:text-white">Kerani Panen</span>
+</label>
+<label class="flex items-center space-x-3 p-3 border-2 border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer has-[:checked]:border-primary has-[:checked]:bg-primary/10">
+<input class="form-radio h-5 w-5 text-primary focus:ring-primary" name="role" type="radio"/>
+<span class="font-medium text-gray-900 dark:text-white">Pemanen</span>
+</div>
+</div>
+
+</body></html>
