@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriTrack Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4cdf20",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#152111",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="flex flex-col h-screen justify-between">
+<main class="flex-grow overflow-y-auto">
+<header class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10 p-4">
+<div class="flex items-center justify-between">
+<div>
+<h1 class="text-xl font-bold text-slate-900 dark:text-white">AgriTrack</h1>
+<p class="text-sm text-slate-500 dark:text-slate-400">Farm Manager</p>
+</div>
+<button class="p-2 rounded-full hover:bg-primary/20">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-300">
+                            settings
+                        </span>
+</button>
+</div>
+</header>
+<div class="p-4 space-y-6">
+<h2 class="text-lg font-bold text-slate-900 dark:text-white px-2">Quick Stats</h2>
+<div class="space-y-4">
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-sm overflow-hidden flex items-center p-4 gap-4">
+<div class="flex-1">
+<p class="text-base font-bold text-slate-800 dark:text-slate-100">Today’s Production</p>
+<p class="text-2xl font-bold text-primary">1,250 <span class="text-base font-medium text-slate-500 dark:text-slate-400">kg</span></p>
+</div>
+<div class="w-24 h-24 rounded-lg bg-cover bg-center" style='background-image: url("/assets/ar3-21jul20.webp");'></div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-sm overflow-hidden flex items-center p-4 gap-4">
+<div class="flex-1">
+<p class="text-base font-bold text-slate-800 dark:text-slate-100">Monthly Harvest</p>
+<p class="text-2xl font-bold text-primary">5,500 <span class="text-base font-medium text-slate-500 dark:text-slate-400">kg</span></p>
+</div>
+<div class="w-24 h-24 rounded-lg bg-cover bg-center" style='background-image: url("/assets/952027641p.jpg");'></div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-sm overflow-hidden flex items-center p-4 gap-4">
+<div class="flex-1">
+<p class="text-base font-bold text-slate-800 dark:text-slate-100">New Reports</p>
+<p class="text-2xl font-bold text-primary">3</p>
+</div>
+<div class="w-24 h-24 rounded-lg bg-cover bg-center" style='background-image: url("/assets/1000_F_207614195_Lkhqpv4ExvMifZLxugEl5qnlive1quZ2.jpg");'></div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 shadow-t-lg">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center justify-center gap-1 w-full py-2 rounded-lg text-primary" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-full py-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-xs font-medium">Create</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-full py-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">eco</span>
+<span class="text-xs font-medium">Harvest</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-full py-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-xs font-medium">Alerts</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-full py-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
