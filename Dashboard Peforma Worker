@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#4cdf20",
+          "background-light": "#f6f8f6",
+          "background-dark": "#152111",
+        },
+        fontFamily: {
+          "display": ["Work Sans"]
+        },
+        borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+      },
+    },
+  }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<main class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light/80 p-4 pb-2 backdrop-blur-sm dark:bg-background-dark/80">
+<div class="flex size-10 items-center justify-center">
+<div class="aspect-square size-10 rounded-full bg-cover bg-center bg-no-repeat" style='background-image: url("/assets/1726838561_e6274fdcaaf844cb1572.jpg");'></div>
+</div>
+<h1 class="flex-1 text-center text-lg font-bold">Dashboard</h1>
+<div class="size-10"></div>
+</header>
+<div class="p-4">
+<section class="mb-6">
+<h2 class="mb-3 text-2xl font-bold">Team Overview</h2>
+<div class="space-y-2">
+<a class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm transition-shadow hover:shadow-md dark:bg-background-dark dark:hover:bg-primary/10" href="#">
+<img alt="M. Rafli Ardiyaksa. R" class="size-14 rounded-full" src="/assets/1726840726_0017685b40e873eada4c.jpg"/>
+<div class="flex-grow">
+<p class="font-medium"><Map>M.Rafli Ardiyaksa. R</Map></p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Pemanen</p>
+</div>
+<span class="material-symbols-outlined text-gray-400">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm transition-shadow hover:shadow-md dark:bg-background-dark dark:hover:bg-primary/10" href="#">
+<img alt="Sajidur Rahman Toyib" class="size-14 rounded-full" src="/assets/1726841988_3d592f7e22c4d2a2205e.jpg"/>
+<div class="flex-grow">
+<p class="font-medium">Sajidur Rahman Toyib</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Pemanen</p>
+</div>
+<span class="material-symbols-outlined text-gray-400">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm transition-shadow hover:shadow-md dark:bg-background-dark dark:hover:bg-primary/10" href="#">
+<img alt="Muhammad Rozha Ramadhan R" class="size-14 rounded-full" src="/assets/1727082039_794082620ef507680d63.jpg"/>
+<div class="flex-grow">
+<p class="font-medium">Muhammad Rozha Ramadhan R</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Pemanen</p>
+</div>
+<span class="material-symbols-outlined text-gray-400">chevron_right</span>
+</a>
+</div>
+</section>
+<section>
+<h2 class="mb-3 text-2xl font-bold">Pending Approvals</h2>
+<div class="space-y-2">
+<div class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm dark:bg-background-dark">
+<img alt="Ethan Carter" class="size-14 rounded-full" src="/assets/1726840616_0eeb7defe1d15d84f8b2.jpg"/>
+<div class="flex-grow">
+<p class="font-medium">M. Hafiz Mailano</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Mandor Panen</p>
+</div>
+<button class="shrink-0 cursor-pointer rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90">
+                  Approve
+                </button>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm dark:bg-background-dark">
+<img alt="Liam Harper" class="size-14 rounded-full" src="/assets/1726841515_f7b8943b97e398c6fb49.jpg"/>
+<div class="flex-grow">
+<p class="font-medium">Rengga Bagus Kurniawan</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Kerani Panen</p>
+</div>
+<button class="shrink-0 cursor-pointer rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90">
+                  Approve
+                </button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-background-light/80 pt-2 backdrop-blur-sm dark:bg-background-dark/80">
+<nav class="flex justify-around border-t border-gray-200/50 px-2 pb-3 pt-1 dark:border-gray-700/50">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">add_box</span>
+<p class="text-xs font-medium">Create Report</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">eco</span>
+<p class="text-center text-xs font-medium">Production &amp; Harvest</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<p class="text-xs font-medium">Notifications</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
