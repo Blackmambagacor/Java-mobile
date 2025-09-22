@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#4cdf20",
+            "background-light": "#f6f8f6",
+            "background-dark": "#152111",
+          },
+          fontFamily: {
+            display: ["Work Sans"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+        },
+      },
+    };
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-gray-100">
+<div class="flex flex-col justify-between min-h-screen">
+<div class="flex-grow">
+<header class="bg-background-light dark:bg-background-dark sticky top-0 z-10 px-4 py-3 border-b border-gray-200 dark:border-gray-800">
+<div class="flex items-center">
+<button class="text-gray-700 dark:text-gray-300">
+<span class="material-symbols-outlined"> arrow_back </span>
+</button>
+<h1 class="text-xl font-bold text-center flex-1 text-gray-900 dark:text-gray-100 pr-8">Admin</h1>
+</div>
+</header>
+<main class="p-4">
+<h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">Users</h2>
+<div class="flex gap-2 mb-4">
+<div class="relative flex-1">
+<select class="w-full bg-background-light dark:bg-background-dark border border-gray-300 dark:border-gray-700 rounded-md py-2 pl-3 pr-10 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary">
+<option>Filter by Role</option>
+<option>Manager</option>
+<option>Editor</option>
+<option>Viewer</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400"> expand_more </span>
+</div>
+<div class="relative flex-1">
+<select class="w-full bg-background-light dark:bg-background-dark border border-gray-300 dark:border-gray-700 rounded-md py-2 pl-3 pr-10 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary">
+<option>Filter by Status</option>
+<option>Active</option>
+<option>Inactive</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400"> expand_more </span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-3 rounded-lg">
+<img alt="Ahmad Ilyas Mualimin" class="h-14 w-14 rounded-full object-cover" src="/assets/1726838973_b8c9909b3743cffc5038.jpg"/>
+<div class="flex-grow">
+<p class="font-semibold text-gray-900 dark:text-gray-100">Ahmad Ilyas Mualimin</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Asisten Panen</p>
+</div>
+<button class="text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined"> more_vert </span>
+</button>
+</div>
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-3 rounded-lg">
+<img alt="M. Hafiz Mailano" class="h-14 w-14 rounded-full object-cover" src="/assets/1726840616_0eeb7defe1d15d84f8b2.jpg"/>
+<div class="flex-grow">
+<p class="font-semibold text-gray-900 dark:text-gray-100">M. Hafiz Mailano</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Mandor Panen</p>
+</div>
+<button class="text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined"> more_vert </span>
+</button>
+</div>
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-3 rounded-lg">
+<img alt="Rengga Bagus Kurniawan" class="h-14 w-14 rounded-full object-cover" src="/assets/1726841515_f7b8943b97e398c6fb49.jpg"/>
+<div class="flex-grow">
+<p class="font-semibold text-gray-900 dark:text-gray-100">Rengga Bagus Kurniawan</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Kerani Panen</p>
+</div>
+<button class="text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined"> more_vert </span>
+</button>
+</div>
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-3 rounded-lg">
+<img alt="Muhammad Zhafir" class="h-14 w-14 rounded-full object-cover" src="/assets/1726841139_4ea088cdb1193ff511b3.jpg"/>
+<div class="flex-grow">
+<p class="font-semibold text-gray-900 dark:text-gray-100">Muhammad Zhafir</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Asisten Pabrik</p>
+</div>
+<button class="text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined"> more_vert </span>
+</button>
+</div>
+</main>
+</div>
+<div class="sticky bottom-0">
+<div class="flex justify-end p-4">
+<button class="flex items-center justify-center gap-2 h-14 px-6 bg-primary text-gray-900 font-bold rounded-full shadow-lg">
+<span class="material-symbols-outlined"> add </span>
+<span class="truncate">Add User</span>
+</button>
+</div>
+<nav class="bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 px-4 pt-2 pb-4">
+<div class="flex justify-around">
+<a class="flex flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined"> home </span>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined"> add_box </span>
+<p class="text-xs font-medium">Create Report</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined"> local_florist </span>
+<p class="text-xs font-medium text-center">Production &amp; Harvest</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined"> notifications </span>
+<p class="text-xs font-medium">Notifications</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-primary" href="#">
+<span class="material-symbols-outlined"> person </span>
+<p class="text-xs font-bold">Profile</p>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>
